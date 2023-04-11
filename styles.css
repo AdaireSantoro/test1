@@ -246,7 +246,24 @@ audio   {
     background-color: #020659;
 }
 
-audio::webkit-media-controls-mute-button {
+.more-curated {
+    text-decoration: none;
+    background-color: #590242;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    display: grid;
+    text-align: center;
+    margin: 10px 0 30px 32px;
+    float:inline-end;
+}
+
+.more-curated:hover {
+    background-color: #020659;
+}
+
+audio::-webkit-media-controls-mute-button {
     background-color:white;
     border-radius: 50%;
 }
@@ -299,11 +316,6 @@ border-radius: 5px;
 }
 
 
-
-
-
-
-
 .your-playlist {
     background-color: #2699fb;
     border-radius:  5px;
@@ -339,7 +351,7 @@ border-radius: 5px;
     border-radius: 5px;
     padding: 10px;
     width: 150px;
-    display: block;
+    display: grid;
     text-align: center;
     margin: 10px 0 30px 32px;
 }
@@ -360,6 +372,7 @@ border-radius: 5px;
     overflow-y: auto;
     text-align:center; 
     float:right;
+    clear: right;
 }
 
 .curated-playlist + p {
